@@ -1,0 +1,11 @@
+{% extends 'sizeapp/base.html' %}
+{% block content %}
+    <h1>Create</h1>
+    <div class="container">
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="button" value="Submit">
+        </form>
+    </div>
+{% endblock %}
