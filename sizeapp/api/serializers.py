@@ -4,4 +4,4 @@ from sizeapp.models import Images
 class ImagesSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Images
-		fields = ['name', 'image']
+		fields = ['id', 'name', 'image']

@@ -3,6 +3,7 @@ from django.urls import reverse
 from sizeapp import views
 # Create your models here.
 class Images(models.Model):
+	id = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=32, blank=True)
 	image = models.ImageField(upload_to='uploads', blank=True)
 
